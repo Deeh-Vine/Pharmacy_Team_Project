@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Style+Script&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, sans-serif;
+    background-color: white;
+    height: 3000px;
+    
+}
+header{
+    background-color: rgba( 0, 0, 0, 0);
+    top: 0;
+    flex-direction: row;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:64px;
+    margin-top: 0px;
+    z-index: 1000;
+    position: relative;
+}
+nav  ul{ 
+    font-weight: bold;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:40px 20px;
+    height:55px;
+    list-style:none;
+    gap:3px;
+
+}
+
+.team-name{
+    display: flex;
+    flex-shrink: 0;
+    font-size:20px;
+    font-weight:bolder;
+    font-family: "Comforter", cursive;
+    font-weight:500px;
+    color: #ccc;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav > ul > li > a {
+    color: #ccc;
+    text-decoration:none;
+    font-weight: bolder;
+    display:block;
+    margin:0 0.2rem;
+    padding:0.2rem;
+    transition: transform 0.2s ease;
+}
+
+a {
+    text-decoration:none;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.2);
+    color: #222;
+    cursor:pointer;
+    }
+
+.slider {
+    display: flex;
+    text-align:center;
+    color: white;
+    padding:0 20px;
+    margin-top:64px;
+    position: relative;
+    width: 100%;
+    height:600px;
+    box-sizing:border-box;
+}
+.slider-content h1{
+    font-size:55px;
+    font-weight: bolder;
+    color:white;
+    font-family:'poppins' sans-seriff;
+    margin-top:30px;
+}
+
+.slider-content {
+    text-align: center;
+    align-items: center;
+    width: 507px;
+    margin-left: 30px;
+    height:100;
+    
+}
+.slider-content p{
+    color:#ccc;
+    margin-top:10px;
+    font-size:16px;
+    
+}
+
+.arrow{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 0px;
+    background: #eee;
+    border: none;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    font-size:30px;
+    cursor: pointer;
+    transition:0.3% ease;
+    color: rgb(13, 161, 161);
+  
+}
+.arrow2{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    right: 0px;
+    background: #eee;
+    border: none;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    font-size:30px;
+    cursor: pointer;
+    color: rgb(13, 161, 161);
+}
+.arrow:hover{
+    background:#ccc;
+}
+.arrow2:hover{
+    background:#ccc;
+}
+
+.cta {
+    text-align: center;
+    align-items: center;
+    background:#ff005e;
+    color: black;
+    padding: 10px 15px;
+    margin:40px auto;
+    width:30%;
+    margin-top:100px;
+    cursor: pointer;
+    border:none;
+    border-radius:3px;
+    font-weight:bold;
+    transition:0.3% ease;
+   
+}
+.cta:hover{
+    color: #ff005e;
+    background:#ddd;
+}
+.img-number{
+    position: relative;
+    left: 84.5%;
+    top: 17%;
+    width: fit-content;
+    height: fit-content;
+}
+.img-Tnumber{
+    font-size:35px;
+    font-weight: bolder;
+}
+.number{
+    font-size:75px;
+    font-weight: bolder;
+    color:white;
+    font-family:'poppins' sans-seriff;
+}
+
+
+
+
+/*THE BACKGROUND STYLE */
+.hero-section{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow-container {
+
+  background-color: rgb(203, 186, 250);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Important to hide overflowing images during transition */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* Ensures images cover the container without distortion */
+  opacity: 0;
+  
+  transition: transform 2.5s ease-in-out, opacity 2.0s ease-in-out; /* Smooth transition with transform */
+  transform: scale(2.0); /* Start slightly zoomed in for the "zoom out" effect, or slightly zoomed out for "zoom in" effect */
+
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1); /* Zooms to original size */
+}
+
+.img2{
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+.img1{
+    object-fit: cover;
+    object-position: 50% 85%;
+}
+.img3{
+    object-fit: cover;
+    object-position: 50% 15%;
+}
