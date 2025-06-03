@@ -197,7 +197,7 @@ nav > ul > li > a:hover{
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Important to hide overflowing images during transition */
+  overflow: hidden;
 }
 
 .slide {
@@ -206,11 +206,11 @@ nav > ul > li > a:hover{
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit:cover; /* Ensures images cover the container without distortion */
+  object-fit:cover; 
   opacity: 0;
   
-  transition: transform 2.5s ease-in-out, opacity 2.0s ease-in-out; /* Smooth transition with transform */
-  transform: scale(2.0); /* Start slightly zoomed in for the "zoom out" effect, or slightly zoomed out for "zoom in" effect */
+  transition: transform 2.5s ease-in-out, opacity 2.0s ease-in-out; 
+  transform: scale(2.0);
 
 }
 
