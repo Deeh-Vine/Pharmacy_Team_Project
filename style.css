@@ -3,9 +3,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family:Arial, sans-serif;
-    background-color: white;
-    height: 3000px;
-    
+    background-color: white;    
 }
 header{
     background-color: rgba( 0, 0, 0, 0);
@@ -28,7 +26,6 @@ nav  ul{
     justify-content:space-evenly;
     align-items:center;
     padding:40px 20px;
-    height:55px;
     list-style:none;
     gap:3px;
 
@@ -43,10 +40,10 @@ nav  ul{
     font-weight:500px;
     color: #ccc;
     text-decoration:none;
-    margin-left:20px;
+    margin-left: 2%;
 }
 
-nav > ul > li > a {
+nav  ul  li  a {
     color: #ccc;
     text-decoration:none;
     font-weight: bolder;
@@ -60,7 +57,7 @@ a {
     text-decoration:none;
 }
 
-nav > ul > li > a:hover{
+nav  ul  li  a:hover{
     transform: scale(1.2);
     color: #222;
     cursor:pointer;
@@ -70,11 +67,11 @@ nav > ul > li > a:hover{
     display: flex;
     text-align:center;
     color: white;
-    padding:0 20px;
+    padding:0 20px; 
     margin-top:64px;
     position: relative;
     width: 100%;
-    height:600px;
+    height: fit-content;
     box-sizing:border-box;
 }
 .slider-content h1{
@@ -145,13 +142,12 @@ nav > ul > li > a:hover{
     background:#ff005e;
     color: black;
     padding: 10px 15px;
-    margin:40px auto;
-    width:30%;
+    width:100px;
     margin-top:100px;
     cursor: pointer;
     border:none;
     border-radius:3px;
-    font-weight:bold;
+font-weight: 550;
     transition:0.3% ease;
    
 }
@@ -190,11 +186,8 @@ nav > ul > li > a:hover{
     align-items: center;
 }
 .slideshow-container {
-
   background-color: rgb(203, 186, 250);
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -202,8 +195,6 @@ nav > ul > li > a:hover{
 
 .slide {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit:cover; 
